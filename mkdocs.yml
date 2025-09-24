@@ -1,0 +1,85 @@
+site_name: LZR Systems
+site_url: https://lzrsystems.com
+theme:
+  name: material
+  logo: assets/site-logo.svg
+  language: en
+  
+  font: 
+    text: arial
+    code: Roboto Mono
+  palette: 
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: light blue
+
+        
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs  
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.path
+    - toc.follow
+    - toc.integrate
+    - header.autohide
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.indexes
+    - tags
+    - content.code.copy
+    - content.code.select
+    - content.image.lightbox
+plugins:
+  - search
+  - tags:
+        tags_file: Tags.md
+        sort: name
+  - meta
+
+nav:
+  - Home: index.md
+  - Projects: 
+      - Projects/index.md
+      - AIODuino: Projects/AIOduino.md
+      - NANOPSU: Projects/NANOPSU.md
+      - Launchy: Projects/launchy.md
+      - BreadboardPSU: Projects/BreadboardPSU.md
+      - Sparky: Projects/Sparky.md
+      - TinyPSU: Projects/TinyPSU.md
+      - Electronic load: Projects/electronic_load.md
+      - USB3.0 Hub: Projects/USB3hub.md
+    
+    
+  - Downloads: Downloads.md
+  - Gallery: Gallery.md
+  - Tags: Tags.md
+  - About: About.md
+
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - js/randomGallery.js
+  - js/gallery.js
+
+
+markdown_extensions: 
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
