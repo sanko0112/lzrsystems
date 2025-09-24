@@ -112,3 +112,20 @@ model-viewer {
 }
 
 
+#gallery-img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh; /* never taller than 60% of viewport */
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+#gallery-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+  text-align: center;
+}

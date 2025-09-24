@@ -37,15 +37,9 @@ document$.subscribe(function() {
       container.innerHTML = `
         <div style="text-align:center; max-width:800px; margin:auto;">
           <a href="/Gallery/" id="gallery-link" style="display:block;">
-            <img id="gallery-img" src="${randomImage}" alt="${fileName}"
-                 style="max-width:100%; max-height:400px; object-fit:contain;
-                        border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.15);
-                        opacity:1; transition:opacity 0.8s ease;">
+            <img id="gallery-img" src="${randomImage}" alt="${fileName}">
           </a>
-          <p id="gallery-caption"
-             style="margin-top:0.5rem; font-size:0.9rem; color:var(--md-default-fg-color--light)">
-            ${fileName}
-          </p>
+          <p id="gallery-caption">${fileName}</p>
         </div>`;
       return;
     }
