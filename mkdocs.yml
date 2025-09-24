@@ -1,5 +1,6 @@
 site_name: LZR Systems
 site_url: https://sanko0112.github.io/lzrsystems/
+use_directory_urls: true 
 theme:
   name: material
   logo: assets/site-logo.svg
