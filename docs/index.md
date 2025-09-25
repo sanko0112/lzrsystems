@@ -1,3 +1,10 @@
+---
+title: Homepage
+
+---
+
+
+
 # Embedded systems and hardware design projects by Lázár Sándor
 > This site is a collection of electronics and embedded systems reference designs.  
 > It provides schematics, PCB layouts, and documentation for various projects,  

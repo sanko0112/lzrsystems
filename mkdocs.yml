@@ -7,7 +7,7 @@ theme:
   language: en
   
   font: 
-    text: arial
+    text: Inter
     code: Roboto Mono
   palette: 
     - media: "(prefers-color-scheme: dark)"
@@ -42,7 +42,11 @@ plugins:
         tags_file: Tags.md
         sort: name
   - meta
-
+  - social:
+      cards_dir: Social-Cards
+      cards_layout_options: 
+        background_color: "#ffffff"
+        color: rgb(9, 186, 206)
 nav:
   - Home: index.md
   - Projects: 
@@ -64,7 +68,6 @@ nav:
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
-  - assets/js/custom.js
   - js/randomGallery.js
   - js/gallery.js
 
