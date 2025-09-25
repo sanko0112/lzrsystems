@@ -3,7 +3,7 @@
 > It provides schematics, PCB layouts, and documentation for various projects,  
 > intended as a resource for learning, experimentation, and future development.
 
-## :material-folder: [Projects](Projects/index.md)
+## :material-book-open-variant: [Projects](Projects/index.md)
 
 <div class="project-carousel">
   <div class="project-track">
