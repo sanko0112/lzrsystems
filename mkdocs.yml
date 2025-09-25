@@ -38,6 +38,7 @@ theme:
     - content.code.select
 plugins:
   - search
+  - meta
   - social:
       cards_dir: Social-Cards
       cards_layout_options: 
@@ -46,7 +47,6 @@ plugins:
   - tags:
         tags_file: Tags.md
         sort: name
-  - meta
 
 nav:
   - Home: index.md

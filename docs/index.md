@@ -1,6 +1,9 @@
 ---
-Title: Embedded systems and hardware design projects
+title: Home
+description: Embedded systems and hardware design projects
+image: ../Social-Cards/lzrsystems-card.png
 ---
+
 
 # Embedded systems and hardware design projects by Lázár Sándor
 > This site is a collection of electronics and embedded systems reference designs.  
