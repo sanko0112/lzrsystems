@@ -12,11 +12,10 @@ tags:
 ![Logo](/assets/Gallery/Launchy/launchy_logo.png)
 
 
+ESP32 ESP-NOW Based model rocket launch controller.
 
-### ESP32 ESP-NOW Based model rocket launch controller
 
-
-# :octicons-rocket-24: Features
+## :octicons-rocket-24: Features
 
 - ESP-NOW Long range protocol
 - Multi-layer safety: Key switch, iButton, push button
@@ -27,13 +26,13 @@ tags:
 - Continuity test (1S mode)
 - Preheat mode(1S mode)
 - Configurabe Countdown time, Ignition time
-# 🔧Hardware
+## :fontawesome-solid-tools: Hardware
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The system is based on a custom PCB designed in KiCad, built around the ESP32-C3-MINI-1 module. Both the transmitter and the igniter/receiver use the same board design, but are populated with different component sets depending on their role. The
 hardware integrates Li-Ion charging (TP4056), a 3.3 V LDO regulator (AP2112K), a MOSFET-driven relay interface, iButton authentication, and status LEDs. USB-C is provided for charging and programming, while screw terminals allow safe connection of the igniter circuit.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Complete manufacturing files are available as a ZIP inside the GERBER folder as well as the BoM. Symbol and footprint libraries are uploaded so the project should be fully editable in KiCad now.
 
-## Schematic
+## :material-notebook-edit: Schematic
 
 <iframe src="/assets/Gallery/Launchy/Launchy.pdf"
         width="100%"
@@ -41,7 +40,7 @@ hardware integrates Li-Ion charging (TP4056), a 3.3 V LDO regulator (AP2112K), a
         style="border:none;">
 </iframe>
 
-# 💻Firmware
+## :octicons-code-square-24: Firmware
 ### Transmitter.ino
 - Handles the remote unit (user interface + iButton authentication).
 - Implements menus for:
@@ -879,7 +878,7 @@ void fail_sound()
 - esp_wifi.h (for long-range protocol mode)
 - OneWire (for iButton reader)
 - U8g2lib (for OLED display)
-### 🚀 Setup & Upload
+## :material-fast-forward: Setup & Upload
 1. Clone repo/Download as .zip and open in Arduino IDE.
 2. Select ESP32 Dev Module (or your ESP32 board).
 3. Upload separately:
@@ -890,7 +889,7 @@ void fail_sound()
 5. Use Read_fob.ino to read your iButton ID.
     - Replace in allowedID[] array in the transmitter code.
 
-# Display demo
+## Display demo
 
 <img src="/assets/Gallery/Launchy/LaunchDisplayLibrary-demo.gif"
      alt="Display Demo"
@@ -905,3 +904,19 @@ void fail_sound()
 ## Igniter enclosure
 
 <iframe width="640" height="480" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/sanko0112/Launchy/main/3D%20Models/Igniter%20enclosure.step$camera=62.30919,-469.98480,38.03262,49.22316,-101.59643,21.24401,0.00000,1.00000,0.00000,45.00000$projectionmode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=95,95,95,255$defaultcolor=255,255,255$defaultlinecolor=100,100,100$edgesettings=off,0,0,0,1"></iframe>
+
+## :octicons-image-24: Photos 
+<div id="Launchy-gallery"></div>
+
+## :simple-youtube: Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6urxjE-0fT8?si=PYN42SH8dV0idNbq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g8prIVViN2I?si=xmCCB0V4Axc-67hd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## :fontawesome-solid-download: Downloads
+[Launchy.zip](https://github.com/sanko0112/Launchy/archive/refs/heads/main.zip)
+```shell
+git clone https://github.com/sanko0112/Launchy.git
+cd Launchy
+```

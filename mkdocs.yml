@@ -1,6 +1,6 @@
 site_name: LZR Systems
-site_url: https://sanko0112.github.io/lzrsystems/
-use_directory_urls: true 
+site_url: https://lzrsystems.com
+use_directory_urls: true
 theme:
   name: material
   logo: assets/site-logo.svg
@@ -22,7 +22,6 @@ theme:
     - navigation.instant.progress
     - navigation.instant.preview
     - navigation.tracking
-    - navigation.tabs  
     - navigation.sections
     - navigation.expand
     - navigation.top
@@ -44,6 +43,7 @@ plugins:
         tags_file: Tags.md
         sort: name
   - meta
+  - glightbox
 
 nav:
   - Home: index.md
@@ -62,11 +62,11 @@ nav:
   - Downloads: Downloads.md
   - Gallery: Gallery.md
   - Tags: Tags.md
-  - About: About.md
 
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
+  - assets/js/custom.js
   - js/randomGallery.js
   - js/gallery.js
 

@@ -14,10 +14,28 @@ document$.subscribe(function() {
     "/assets/Gallery/Launchy/Launchy-bottom.png",
     "/assets/Gallery/Launchy/Launchy-Transmitter.jpg",
     "/assets/Gallery/Launchy/Launchy-Transmitter-open.jpg",
-    "/assets/Gallery/Launchy/Launchy-igniter.jpg",
+    "/assets/Gallery/Launchy/Launchy-Igniter.jpg",
     "/assets/Gallery/Launchy/Launchy-Igniter-open.jpg",
     "/assets/Gallery/Launchy/Launchy-Igniter-battSide.jpg",
     "/assets/Gallery/Launchy/Launchy-Igniter-ematchSide.jpg"
+  ];
+
+  const aioduino_images = [
+    "/assets/Gallery/AIOduino/AIOduino-logo.png",
+    "/assets/Gallery/AIOduino/3D-Board-Front.png",
+    "/assets/Gallery/AIOduino/3D-Board-Back.png"
+  ];
+
+    const nanopsu_images = [
+    "/assets/Gallery/NANOPSU/NANOPSU-logo.png",
+    "/assets/Gallery/NANOPSU/3D-Board-Front.png",
+    "/assets/Gallery/NANOPSU/3D-Board-Back.png"
+  ];
+
+    const breadboardpsu_images = [
+    "/assets/Gallery/BreadboardPSU/BreadboardPSU-logo.png",
+    "/assets/Gallery/BreadboardPSU/3D-Board-Front.png",
+    "/assets/Gallery/BreadboardPSU/3D-Board-Back.png"
   ];
 
   // --- Render function (grid layout + lightbox)
@@ -50,5 +68,8 @@ document$.subscribe(function() {
   }
 
   // --- Render each project separately
-  renderGallery("launchy-gallery", launchy_images);
+  renderGallery("Launchy-gallery", launchy_images);
+  renderGallery("AIOduino-gallery", aioduino_images);
+  renderGallery("breadboardpsu-gallery", breadboardpsu_images);
+  renderGallery("nanopsu-gallery",  nanopsu_images);
 });
