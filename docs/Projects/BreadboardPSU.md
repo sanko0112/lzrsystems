@@ -51,6 +51,7 @@ tags:
 **2x 2x05 2.54 pitch header for breadboard connection**
 
 ### :material-notebook-edit: Schematics
+***Keybinds***
 
 - Select `LMB`
 - Zoom In/Out `Scroll`
@@ -60,6 +61,7 @@ tags:
 <iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=501F59AB-49CE-4B24-BCC6-1B8570A5C714&activeView=SCH" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
 
 ### :material-rotate-3d: PCB
+***Keybinds***
 
 - Select `LMB`
 - Zoom In/Out `Scroll`

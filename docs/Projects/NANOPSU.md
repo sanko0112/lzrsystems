@@ -53,6 +53,7 @@ tags:
 **CLMUD-FKC RGB LED**
 
 ### :material-notebook-edit: Schematics
+***Keybinds***
 
 - Select `LMB`
 - Zoom In/Out `Scroll`
@@ -62,6 +63,7 @@ tags:
 <iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=2C5CC69E-4CA7-4F9B-A1E0-FAC06562D8F6&activeView=SCH" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
 
 ### :material-rotate-3d: PCB
+ ***Keybinds***
 
 - Select `LMB`
 - Zoom In/Out `Scroll`

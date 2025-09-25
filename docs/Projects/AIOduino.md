@@ -34,6 +34,7 @@ tags:
 ## :fontawesome-solid-tools: Hardware
 
 ### :material-notebook-edit: Schematics
+***Keybinds***
 
 - Select `LMB`
 - Zoom In/Out `Scroll`
@@ -43,6 +44,7 @@ tags:
 <iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=A95F3D29-A1F1-48D4-84F4-54A12B3DD298&activeView=SCH" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
 
 ### :material-rotate-3d: PCB
+***Keybinds***
 
 - Select `LMB`
 - Zoom In/Out `Scroll`
