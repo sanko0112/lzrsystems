@@ -1,6 +1,5 @@
 ---
-title: LZR Systems
-description: Embedded systems and hardware design projects
+Title: Embedded systems and hardware design projects
 image: Social-Cards\lzrsystems-card.png
 ---
 
