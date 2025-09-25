@@ -38,15 +38,16 @@ theme:
     - content.code.select
 plugins:
   - search
-  - tags:
-        tags_file: Tags.md
-        sort: name
-  - meta
   - social:
       cards_dir: Social-Cards
       cards_layout_options: 
         background_color: "#ffffff"
         color: rgb(9, 186, 206)
+  - tags:
+        tags_file: Tags.md
+        sort: name
+  - meta
+
 nav:
   - Home: index.md
   - Projects: 
