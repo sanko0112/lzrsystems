@@ -1,6 +1,5 @@
 ---
 Title: Embedded systems and hardware design projects
-image: Social-Cards\lzrsystems-card.png
 ---
 
 # Embedded systems and hardware design projects by Lázár Sándor
