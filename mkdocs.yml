@@ -36,14 +36,12 @@ theme:
     - tags
     - content.code.copy
     - content.code.select
-    - content.image.lightbox
 plugins:
   - search
   - tags:
         tags_file: Tags.md
         sort: name
   - meta
-  - glightbox
 
 nav:
   - Home: index.md
