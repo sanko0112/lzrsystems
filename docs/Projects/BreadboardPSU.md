@@ -58,7 +58,7 @@ tags:
 - Pan `RMB Drag`
 - Reset View `R`
 
-<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=501F59AB-49CE-4B24-BCC6-1B8570A5C714&activeView=SCH" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
+<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=F271E043-F70E-4AA9-82B4-1017709F8B51&activeView=SCH" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:720px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
 
 ### :material-rotate-3d: PCB
 ***Keybinds***
@@ -74,7 +74,7 @@ tags:
 - Fold / Unfold in 3D (rigid-flex) `5`
 - Flip Board Top / Bottom `F`
 
-<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=54BD593C-419B-4F9A-8DE3-8DAF24510308&activeView=PCB" width="1280" height="720" style="overflow:hidden;border:none;width:100%;height:720px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
+<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=5EE881B9-2D7F-494D-904B-C3584A32FAFA&activeView=PCB" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
 
 ## :material-fast-forward: Quick start
 **❗Disclaimer: Breadboards have limited current capacity. Keep continuous current conservative (e.g., ≤ 1 A per rail unless you know your setup)**

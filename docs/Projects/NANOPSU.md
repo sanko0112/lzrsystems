@@ -60,7 +60,7 @@ tags:
 - Pan `RMB Drag`
 - Reset View `R`
 
-<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=2C5CC69E-4CA7-4F9B-A1E0-FAC06562D8F6&activeView=SCH" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
+<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=D2E5A017-15C9-434E-9BC5-9C9525CF7CCD&activeView=SCH" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
 
 ### :material-rotate-3d: PCB
  ***Keybinds***
@@ -76,7 +76,7 @@ tags:
 - Fold / Unfold in 3D (rigid-flex) `5`
 - Flip Board Top / Bottom `F`
 
-<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=99006CC7-EDF6-40C7-848E-D823B7B6611F&activeView=PCB" width="1280" height="720" style="overflow:hidden;border:none;width:100%;height:720px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
+<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=7E866B4D-173A-4BAC-A0EE-A99D7923158F&activeView=PCB" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
 
 ## :material-fast-forward: Quick start
 - Plug into a USB-C PPS capable charger
