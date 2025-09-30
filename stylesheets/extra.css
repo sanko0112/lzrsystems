@@ -1,0 +1,124 @@
+.md-header__title {
+  display: none !important;
+}
+
+/* Default: light logo */
+.md-header__button.md-logo img {
+  content: url("../assets/site-logo.svg");
+  height: 70px;  /* adjust as needed */
+  width: auto;
+}
+
+/* Dark mode: replace with inverted logo */
+[data-md-color-scheme="slate"] .md-header__button.md-logo img {
+  content: url("../assets/site-logo-inverted.svg");
+}
+
+/* Grab the dark mode toggle specifically */
+.md-header__option[data-md-component="palette"] {
+  margin-left: auto !important;   /* push it to the right */
+  order: 10 !important;           /* before search */
+}
+
+/* Ensure search stays last on the right */
+.md-search {
+  order: 11 !important;
+}
+
+/* Override primary color */
+:root {
+  --md-primary-fg-color: rgb(9, 186, 206);
+}
+/* When TOC is hidden, collapse the right-hand column and let content expand */
+.md-sidebar--secondary[hidden] {
+  display: none !important;
+}
+
+.md-sidebar--secondary[hidden] + .md-content {
+  grid-column: 2 / span 2 !important;
+}
+
+
+
+
+.project-carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.project-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: scroll 45s linear infinite;
+}
+
+.project-card {
+  flex: 0 0 auto;
+  width: 220px;
+  background: var(--md-code-bg-color);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+
+/* Target the full code block wrapper, not just <pre> */
+.md-typeset .highlight {
+  max-height: 400px;     /* set your desired height */
+  overflow-y: auto;      /* vertical scrolling */
+  overflow-x: auto;      /* horizontal scrolling if needed */
+}
+model-viewer {
+  display: block;       /* make it a block element */
+  width: 100%;          /* full width */
+  height: 500px;        /* fixed height, or use vh */
+  margin: 1rem auto;    /* center with spacing */
+  background: #111;     /* optional, gives contrast while loading */
+}
+
+
+#random-gallery-image {
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#random-gallery-image img {
+  width: 100%;
+  height: auto;
+  max-height: 60vh;      /* never taller than 60% of viewport */
+  object-fit: contain;   /* keep full image visible */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+#gallery-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--md-default-fg-color--light);
+  text-align: center;
+  word-wrap: break-word;
+}

@@ -1,0 +1,977 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://lzrsystems.com/Projects/BreadboardPSU/">
+      
+      
+        <link rel="prev" href="../launchy/">
+      
+      
+        <link rel="next" href="../Sparky/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>BreadboardPSU - LZR Systems</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="BreadboardPSU - LZR Systems" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://lzrsystems.com/Social-Cards/Projects/BreadboardPSU.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://lzrsystems.com/Projects/BreadboardPSU/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="BreadboardPSU - LZR Systems" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://lzrsystems.com/Social-Cards/Projects/BreadboardPSU.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#features" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LZR Systems" class="md-header__button md-logo" aria-label="LZR Systems" data-md-component="logo">
+      
+  <img src="../../assets/site-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LZR Systems
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              BreadboardPSU
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="light-blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LZR Systems" class="md-nav__button md-logo" aria-label="LZR Systems" data-md-component="logo">
+      
+  <img src="../../assets/site-logo.svg" alt="logo">
+
+    </a>
+    LZR Systems
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AIOduino/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AIODuino
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NANOPSU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    NANOPSU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../launchy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Launchy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    BreadboardPSU
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    BreadboardPSU
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Schematics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pcb" class="md-nav__link">
+    <span class="md-ellipsis">
+      PCB
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick start
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      Safety
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔜Code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#photos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Photos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downloads
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Sparky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sparky
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TinyPSU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TinyPSU
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../electronic_load/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Electronic load
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../USB3hub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    USB3.0 Hub
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Downloads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Downloads
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Gallery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gallery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tags
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+        <a href="../../Tags/#tag:altium" class="md-tag">Altium</a>
+      
+    
+      
+      
+      
+        <a href="../../Tags/#tag:cc" class="md-tag">C/C++</a>
+      
+    
+      
+      
+      
+        <a href="../../Tags/#tag:cubeide" class="md-tag">CubeIDE</a>
+      
+    
+      
+      
+      
+        <a href="../../Tags/#tag:pcb" class="md-tag">PCB</a>
+      
+    
+      
+      
+      
+        <a href="../../Tags/#tag:psu" class="md-tag">PSU</a>
+      
+    
+      
+      
+      
+        <a href="../../Tags/#tag:stm32" class="md-tag">STM32</a>
+      
+    
+  </nav>
+
+
+
+  <h1>BreadboardPSU</h1>
+
+<p><img alt="Logo" src="../../assets/Gallery/BreadboardPSU/BreadboardPSU-logo.png" /></p>
+<h2>BreadboardPSU is a solderless breadboard compatible programmable power supply based on the USB PD PPS protocol.</h2>
+
+<h2 id="features"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.011 0a1.54 1.54 0 1 0 1.366 2.247c2.221 1.267 3.847 5.472 3.847 10.362 0 2.071-.289 4.056-.825 5.768a.32.32 0 0 0 .211.403.32.32 0 0 0 .403-.21c.556-1.777.855-3.826.855-5.961 0-5.193-1.772-9.686-4.321-11.003q.001-.033.003-.067C13.55.69 12.861 0 12.011 0m0 .643a.896.896 0 1 1 0 1.792.896.896 0 1 1 0-1.792M6.525 4.948c-2.067.008-3.647.665-4.388 1.949-.738 1.277-.527 2.97.51 4.781a.322.322 0 0 0 .559-.32c-.935-1.63-1.117-3.092-.512-4.14.82-1.422 3.033-1.955 5.932-1.427a.322.322 0 0 0 .115-.633 12 12 0 0 0-2.216-.21m11.052.018a.322.322 0 0 0-.008.643c1.834.024 3.156.596 3.75 1.626.82 1.419.18 3.594-1.718 5.837a.32.32 0 0 0 .038.453.32.32 0 0 0 .453-.037c2.053-2.426 2.77-4.866 1.784-6.575-.725-1.257-2.26-1.92-4.299-1.947m-2.698.292a.3.3 0 0 0-.065.008c-1.857.398-3.833 1.175-5.731 2.271-4.57 2.638-7.593 6.495-7.36 9.372a1.538 1.538 0 0 0 .746 2.884 1.54 1.54 0 0 0 0-3.078q-.056 0-.113.006c-.1-2.56 2.744-6.142 7.048-8.627 1.842-1.063 3.756-1.816 5.545-2.2a.322.322 0 0 0-.07-.636M12 11.495a1 1 0 0 0-.224.025 1.114 1.114 0 1 0 .224-.025M4.532 13.34a.32.32 0 0 0-.232.084.32.32 0 0 0-.021.454c1.268 1.393 2.916 2.7 4.794 3.785 4.415 2.55 9.106 3.285 11.561 1.84a1.53 1.53 0 0 0 .897.29 1.54 1.54 0 1 0-1.338-.781c-2.245 1.214-6.631.5-10.798-1.906-1.823-1.052-3.418-2.318-4.64-3.661a.32.32 0 0 0-.223-.105m-2.063 4.017a.896.896 0 1 1 0 1.792.896.896 0 1 1 0-1.792m19.062 0a.896.896 0 1 1 0 1.792.9.9 0 0 1-.587-.22l-.006-.011a.3.3 0 0 0-.096-.092.896.896 0 0 1 .689-1.469M7.526 18.726a.322.322 0 0 0-.32.43C8.279 22.154 10.036 24 12.01 24c1.44 0 2.774-.982 3.813-2.711a.32.32 0 0 0-.11-.441.32.32 0 0 0-.442.11c-.934 1.553-2.08 2.399-3.26 2.399-1.642 0-3.208-1.647-4.2-4.418a.32.32 0 0 0-.286-.213"/></svg></span> Features</h2>
+<ul>
+<li><strong>5 Selectable voltage outputs: 3.3V, 5V, 9V, 12V, 16V</strong></li>
+<li><strong>Single button UI</strong> (no jumpers)</li>
+<li><strong>USB-C input</strong></li>
+<li><strong>RGB LED feedback</strong></li>
+<li><strong>Reverse current protection</strong></li>
+<li><strong>Fully customizable Voltage table and debug via SWIO &amp; UART headers</strong></li>
+</ul>
+<h2 id="hardware"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M224.1 97.1v49.6l.5.5C231.1 64.8 300 0 384.1 0c20.1 0 39.4 3.7 57.1 10.5 10 3.8 11.8 16.5 4.3 24.1l-88.7 88.7c-3 3-4.7 7.1-4.7 11.3V176c0 8.8 7.2 16 16 16h41.4c4.2 0 8.3-1.7 11.3-4.7l88.7-88.7c7.6-7.6 20.3-5.7 24.1 4.3 6.8 17.7 10.5 37 10.5 57.1 0 60.6-33.7 113.4-83.5 140.5l81.5 81.5c18.7 18.7 18.7 49.1 0 67.9L482 510c-18.7 18.7-49.1 18.7-67.9 0l-126-126c-27.4-27.4-33.6-67.9-18.5-101.3L178.9 192h-49.6c-10.7 0-20.7-5.3-26.6-14.2L23.4 58.9c-4.2-6.3-3.4-14.8 2-20.2L70.8-6.7c5.4-5.4 13.8-6.2 20.2-2l118.9 79.2c8.9 5.9 14.2 15.9 14.2 26.6m-8.5 199.5c-6.3 37 2.4 76.1 26.4 107.4l-95 94.9c-28.1 28.1-73.7 28.1-101.8 0s-28.1-73.7 0-101.8l135.4-135.4 35 35z"/></svg></span> Hardware</h2>
+<p><strong>Microcontroller: CH32V006F8P6</strong></p>
+<ul>
+<li>32-bit RISC-V core</li>
+<li>24MHz internal RC oscillator</li>
+<li>8kB SRAM</li>
+<li>62kB PROGMEM</li>
+<li>8 channel 12-bit ADC</li>
+<li>14 I/O port</li>
+<li>I2C, SPI, UART</li>
+<li>Debug: 1-wire SWIO</li>
+<li>Package: TSSOP-20</li>
+</ul>
+<p><strong>USB PD Sink Controller: CH224Q</strong></p>
+<ul>
+<li>USB PD 3.0/3.2, EPR, PPS, SPR</li>
+<li>100W(PD 3.0), 140W(PD 3.2)</li>
+<li>Config: <ul>
+<li>400kHz I2C</li>
+<li>Single resistor on CFG1 pin</li>
+<li>CFG1/2/3 logic-level selection</li>
+</ul>
+</li>
+<li>Over-voltage protection</li>
+</ul>
+<p><strong>Dual PMV20XNER NMOS for reverse current protection &amp; Vout EN</strong></p>
+<p><strong>DCP3601NMR Buck converter for MCU power/logic rail</strong></p>
+<p><strong>CLMUD-FKC RGB LED</strong></p>
+<p><strong>2x 2x05 2.54 pitch header for breadboard connection</strong></p>
+<h3 id="schematics"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.04 13.13c.14 0 .27.06.38.17l1.28 1.28c.22.21.22.56 0 .77l-1 1-2.05-2.05 1-1c.11-.11.25-.17.39-.17m-1.97 1.75 2.05 2.05L15.06 23H13v-2.06zM3 7V5h2V4a2 2 0 0 1 2-2h6v7l2.5-1.5L18 9V2h1c1.05 0 2 .95 2 2v6L11 20v2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7zm2 0h2V5H5zm0 4v2h2v-2zm0 6v2h2v-2z"/></svg></span> Schematics</h3>
+<p><strong><em>Keybinds</em></strong></p>
+<ul>
+<li>Select <code>LMB</code></li>
+<li>Zoom In/Out <code>Scroll</code></li>
+<li>Pan <code>RMB Drag</code></li>
+<li>Reset View <code>R</code></li>
+</ul>
+<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=F271E043-F70E-4AA9-82B4-1017709F8B51&activeView=SCH" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:720px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
+
+<h3 id="pcb"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.47 21.5C4.2 19.94 1.86 16.76 1.5 13H0c.5 6.16 5.66 11 11.95 11l.66-.03-3.81-3.81zm.89-6.54c-.19 0-.36-.03-.52-.08a1.1 1.1 0 0 1-.4-.24c-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.7.21.95s.33.5.56.69c.24.18.51.32.82.41q.45.15.96.15c.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.41.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.16-.12-.35-.23-.51-.1-.15-.24-.3-.4-.43-.17-.13-.37-.22-.61-.31a2.067 2.067 0 0 0 .89-.75c.1-.16.17-.3.22-.46s.07-.32.07-.48q0-.54-.18-.96c-.14-.26-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.05 8.05 8.71 8 8.34 8c-.34 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.39-.51.67-.12.26-.18.54-.18.85h1.3q0-.255.09-.45a.94.94 0 0 1 .25-.34c.11-.09.23-.17.38-.22s.3-.08.48-.08c.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.04.34-.08.49a.87.87 0 0 1-.25.37c-.11.1-.25.18-.41.24s-.36.09-.58.09h-.77v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.23.24.29.4.07.16.1.37.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33m8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27h-2.36v8h2.3c.55 0 1.06-.09 1.51-.27s.84-.43 1.16-.76.58-.73.74-1.19c.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.16-.47-.43-.87-.75-1.2m-.41 3.16c0 .42-.03.8-.12 1.13-.1.33-.24.62-.43.85s-.45.41-.71.53q-.435.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.55 1.12.55 1.99M11.95 0l-.66.03 3.81 3.81 1.33-1.34c3.27 1.56 5.61 4.73 5.96 8.5h1.5c-.5-6.16-5.65-11-11.94-11"/></svg></span> PCB</h3>
+<p><strong><em>Keybinds</em></strong></p>
+<ul>
+<li>Select <code>LMB</code></li>
+<li>Zoom In/Out <code>Scroll</code></li>
+<li>Pan <code>RMB Drag</code></li>
+<li>Rotate in 3D <code>LMB Drag</code></li>
+<li>Reset View <code>R</code></li>
+<li>Switch to 2D <code>2</code></li>
+<li>Switch to 3D <code>3</code></li>
+<li>Next / Previous Layer <code>+/-</code></li>
+<li>Fold / Unfold in 3D (rigid-flex) <code>5</code></li>
+<li>Flip Board Top / Bottom <code>F</code></li>
+</ul>
+<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=5EE881B9-2D7F-494D-904B-C3584A32FAFA&activeView=PCB" width="1280" height="600" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
+
+<h2 id="quick-start"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 6v12l8.5-6M4 18l8.5-6L4 6z"/></svg></span> Quick start</h2>
+<p><strong>❗Disclaimer: Breadboards have limited current capacity. Keep continuous current conservative (e.g., ≤ 1 A per rail unless you know your setup)</strong>
+1. Plug a USB-C PPS capable charger/power bank into the board
+2. Short-press the button to enable/disable the output
+3. Long-press the button to cycle outputs: 3.3V → 5V → 9V → 12V → 16V
+4. RGB LED indicates state/voltage (see table below):</p>
+<table>
+<thead>
+<tr>
+<th>Voltage</th>
+<th>LED color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.3 V</td>
+<td><span style="color:red">RED</span></td>
+</tr>
+<tr>
+<td>5 V</td>
+<td><span style="color:green">GREEN</span></td>
+</tr>
+<tr>
+<td>9 V</td>
+<td><span style="color:blue">BLUE</span></td>
+</tr>
+<tr>
+<td>12 V</td>
+<td><span style="color:cyan">CYAN</span></td>
+</tr>
+<tr>
+<td>16 V</td>
+<td><span style="color:pink">PINK</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="safety"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M260 12.6c0-8.3-7.6-14.5-15.5-12.1-60.9 18.8-105.1 75.8-105.1 143.1 0 25.1 6.1 48.7 17 69.5-21 1.8-42 8.2-61.5 19.5C37 266.2 10.1 332.8 24 395.1c1.9 8.4 11.4 12 18.9 7.6 5-2.9 7.6-8.6 7.1-14.4-.3-3.3-.4-6.6-.4-10.1 0-123.5 184.4-123.5 184.4 0 0 88.4-94.5 113.6-148.2 75.4-4.5-3.2-10.5-3.9-15.3-1.1-7 4.1-8.6 13.6-2.7 19.1 46.6 43.8 118 53.9 176.1 20.2 17.9-10.4 32.8-23.9 44.5-39.4 11.7 15.6 26.6 29.1 44.5 39.4 58.1 33.7 129.5 23.6 176.1-20.2 5.9-5.5 4.3-15.1-2.7-19.1-4.8-2.8-10.8-2.1-15.3 1.1-53.7 38.2-148.2 13-148.2-75.4 0-123.5 184.4-123.5 184.4 0 0 3.4-.1 6.8-.4 10.1-.5 5.8 2.1 11.5 7.1 14.4 7.4 4.3 17 .8 18.9-7.6 13.9-62.2-13-128.9-70.9-162.5-19.5-11.3-40.4-17.7-61.5-19.5 10.9-20.8 17-44.4 17-69.5 0-67.3-44.2-124.3-105.1-143.1-7.9-2.4-15.5 3.8-15.5 12.1 0 5.9 4 11 9.5 13.2 83.4 33.6 70.8 178.4-37.8 178.4s-121.4-144.8-38-178.4c5.5-2.2 9.5-7.3 9.5-13.2M248.4 288a40 40 0 1 1 80 0 40 40 0 1 1-80 0M435 317.7c-16.2 0-31.4 5.5-42.1 15-10.1 9.1-18.1 23.4-18.1 45.6 0 21.1 7.2 35 16.5 44.1 32.2-24.6 55.5-60.5 63.9-101.8-6.3-1.9-13.2-3-20.2-3zm-233 60.6c0-22.3-8-36.6-18.1-45.6-10.7-9.6-25.9-15-42.1-15-7 0-13.9 1-20.2 3 8.4 41.3 31.6 77.2 63.9 101.8 9.4-9.1 16.5-23.1 16.5-44.2M243.2 154c9 10.2 23.2 18.2 45.2 18.2s36.2-8 45.2-18.2c6.7-7.6 11.5-17.5 13.6-28.4-18.3-6.8-38.2-10.5-58.8-10.5s-40.5 3.7-58.8 10.5c2.2 10.9 6.9 20.8 13.6 28.5z"/></svg></span> Safety</h2>
+<ul>
+<li><strong>Max theoretical output current: 3A(limited by Tj<sub>FET</sub> )</strong></li>
+<li><strong>Bench-test with current-limited supply first</strong></li>
+<li><strong>Breadboard contacts can overheat; watch temperature at &gt; 1 A</strong></li>
+<li><strong>Device defaults to 3.3V upon loss of power/restart</strong></li>
+</ul>
+<h2 id="code">🔜Code</h2>
+<p><strong>Still waiting for board, stay tuned</strong></p>
+<h2 id="photos"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.75 3h14.5c.966 0 1.75.784 1.75 1.75v14.5A1.75 1.75 0 0 1 19.25 21H4.75A1.75 1.75 0 0 1 3 19.25V4.75C3 3.784 3.784 3 4.75 3m14.5 1.5H4.75a.25.25 0 0 0-.25.25v14.5c0 .138.112.25.25.25h.19l9.823-9.823a1.75 1.75 0 0 1 2.475 0l2.262 2.262V4.75a.25.25 0 0 0-.25-.25m.25 9.56-3.323-3.323a.25.25 0 0 0-.354 0L7.061 19.5H19.25a.25.25 0 0 0 .25-.25ZM8.5 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0-1.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/></svg></span> Photos</h2>
+<div id="breadboardpsu-gallery"></div>
+
+<h2 id="downloads"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v210.7l-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7zM64 320c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64h-46.9l-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48"/></svg></span> Downloads</h2>
+<p><a href="https://github.com/sanko0112/BreadboardPSU/archive/refs/heads/main.zip">BreadboardPSU.zip</a></p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/sanko0112/BreadboardPSU.git
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>BreadboardPSU
+</span></code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top", "navigation.path", "toc.follow", "toc.integrate", "header.autohide", "search.suggest", "search.highlight", "search.share", "navigation.indexes", "tags", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../js/randomGallery.js"></script>
+      
+        <script src="../../js/gallery.js"></script>
+      
+    
+  </body>
+</html>
