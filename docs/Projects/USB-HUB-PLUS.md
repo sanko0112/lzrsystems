@@ -75,13 +75,17 @@ tags:
 ![3D Board Bottom](../assets/Gallery/USB-HUB-PLUS/usbHub-back.png)
 
 ### 📐 Schematics
+
 **Block Diagram:**
+
 ![Block Diagram](../assets/Gallery/USB-HUB-PLUS/USBHub-BlockDiagram.svg)
 
 **Main Schematic - Hubs & Peripherals:**
+
 ![Main Schematic](../assets/Gallery/USB-HUB-PLUS/USBHub-Peripherals.svg)
 
 **Connectors & Load Switches:**
+
 ![Connectors Schematic](../assets/Gallery/USB-HUB-PLUS/USBHub-Ports.svg)
 
 ## 🔌 Port Mapping
@@ -273,18 +277,13 @@ Silkscreen:       White both sides
 ## 📚 Resources
 
 ### Datasheets
-- [FE2.1 USB Hub Controller](https://datasheet.lcsc.com/lcsc/1912111437_Terminus-Tech-FE2-1_C429766.pdf)
-- [FE1.1S USB Hub Controller](https://www.farnell.com/datasheets/2862638.pdf)
+- [FE2.1 USB Hub Controller](https://www.lcsc.com/datasheet/C39693.pdf)
+- [FE1.1S USB Hub Controller](https://www.lcsc.com/datasheet/C6776948.pdf)
 - [TPS2051B Load Switch](https://www.ti.com/lit/ds/symlink/tps2051b.pdf)
 - [TPD4E001 TVS Array](https://www.ti.com/lit/ds/symlink/tpd4e001.pdf)
-- [CH343P UART Bridge](http://www.wch-ic.com/products/CH343.html)
-- [GL823K SD Card Reader](https://www.genesyslogic.com/en/product_view.php?show=43)
+- [CH343P UART Bridge](https://wiki.wirenboard.com/wiki/images/2/24/CH343.pdf)
+- [GL823K SD Card Reader](https://w.electrodragon.com/w/images/c/cb/GL823K.pdf)
 - [STM32F103C8T6](https://www.st.com/resource/en/datasheet/stm32f103c8.pdf)
-
-### Application Notes
-- [STMicroelectronics TA0357: USB hardware guidelines](https://www.st.com/resource/en/technical_note/tn0357-usb-hardware-and-pcb-guidelines-using-stm32-mcus-stmicroelectronics.pdf)
-- [USB Type-C Resistor Configuration Guide](https://www.usb.org/usb-type-cr-cable-and-connector-specification)
-- [High-Speed USB Layout Guidelines](https://www.ti.com/lit/an/slla414/slla414.pdf)
 
 ### Tools
 - **PCB Design**: Altium Designer
@@ -312,7 +311,3 @@ You are free to use, modify, and distribute this design for personal or commerci
 - [ ] Testing & validation
 - [ ] Firmware development
 - [ ] Documentation completion
-
----
-
-**Last Updated**: January 2026 | **Rev**: 1.0  
