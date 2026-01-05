@@ -53,9 +53,9 @@ image: ../Social-Cards/lzrsystems-card.png
       <p>Small form factor CV/CC benchtop power supply</p>
     </a>
 
-    <a href="/Projects/USB3hub" class="project-card">
-      <img src="../assets/USB3HUB-card.png" alt="Usb3.0 Hub">
-      <h3>USB3.0 Hub</h3>
+    <a href="/Projects/USB-HUB-PLUS" class="project-card">
+      <img src="../assets/USBHUB-card.png" alt="USB Hub+">
+      <h3>USB Hub+</h3>
       <p>USB-C IN 2xUSB-C 3.0, 2xUSB-A 3.0 OUT</p>
     </a>
 
@@ -103,9 +103,9 @@ image: ../Social-Cards/lzrsystems-card.png
       <p>Small form factor CV/CC benchtop power supply</p>
     </a>
 
-    <a href="/Projects/USB3hub" class="project-card">
-      <img src="../assets/USB3HUB-card.png" alt="Usb3.0 Hub">
-      <h3>USB3.0 Hub</h3>
+    <a href="/Projects/USB-HUB-PLUS" class="project-card">
+      <img src="../assets/USBHUB-card.png" alt="USB Hub+">
+      <h3>USB Hub+</h3>
       <p>USB-C IN 2xUSB-C 3.0, 2xUSB-A 3.0 OUT</p>
     </a>
 

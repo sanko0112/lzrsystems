@@ -26,7 +26,7 @@
 
     Small form factor CV/CC benchtop power supply
 
--  [![](../assets/USB3HUB-card.png)](USB3hub.md)
+-  [![](../assets/USBHUB-card.png)](USB-HUB-PLUS.md)
 
     USB-C IN 2xUSB-C 3.0, 2xUSB-A 3.0 OUT
 
