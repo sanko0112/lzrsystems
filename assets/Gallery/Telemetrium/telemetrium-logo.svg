@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="132.16597mm"
+   height="132.16597mm"
+   viewBox="0 0 132.16597 132.16597"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="50.461216"
+       y="580.9859"
+       width="531.88849"
+       height="253.66989"
+       id="rect5" />
+    <rect
+       x="38.574558"
+       y="38.574558"
+       width="422.39142"
+       height="423.3558"
+       id="rect2" />
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-0.06284571,-0.06284571)">
+    <rect
+       style="fill:none;stroke:#010101;stroke-width:7.9375;stroke-linejoin:round;stroke-miterlimit:11.7;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect1"
+       width="124.22848"
+       height="124.22848"
+       x="4.0315957"
+       y="4.0315957" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26316341,0,0,0.27275135,14.799302,6.4549559)"
+       id="text1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:266.667px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);display:inline;fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none"><tspan
+         x="38.574219"
+         y="278.77569"
+         id="tspan1">Tu</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26409641,0,0,0.26184147,1.508726,-65.39621)"
+       id="text5"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:66.6667px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect5);display:inline;fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none"><tspan
+         x="50.460938"
+         y="641.03666"
+         id="tspan2">Telemetrium</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5397px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none"
+       x="46.466751"
+       y="117.69551"
+       id="text6"
+       transform="scale(0.98980451,1.0103005)"><tspan
+         id="tspan6"
+         x="46.466751"
+         y="117.69551"
+         style="stroke-width:0">2450.0</tspan><tspan
+         id="tspan7"
+         x="46.466751"
+         y="133.37013"
+         style="stroke-width:0"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5978px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none"
+       x="15.443371"
+       y="22.218386"
+       id="text6-8"
+       transform="scale(0.99505287,1.0049717)"><tspan
+         id="tspan8"
+         x="15.443371"
+         y="22.218386"
+         style="stroke-width:0">868</tspan><tspan
+         id="tspan9"
+         x="15.443371"
+         y="37.965637"
+         style="stroke-width:0"></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.5149px;font-family:Arial;-inkscape-font-specification:'Arial, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:1;stroke:#010101;stroke-width:0;stroke-linejoin:round;stroke-dasharray:none"
+       x="100.34038"
+       y="21.756186"
+       id="text6-8-4"
+       transform="scale(0.96738943,1.0337099)"><tspan
+         x="100.34038"
+         y="21.756186"
+         id="tspan10"
+         style="stroke-width:0">I. II.</tspan><tspan
+         id="tspan9-2"
+         x="100.34038"
+         y="37.399811"
+         style="stroke-width:0" /></text>
+  </g>
+</svg>
