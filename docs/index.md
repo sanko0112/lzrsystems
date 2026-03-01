@@ -17,10 +17,58 @@ image: ../Social-Cards/lzrsystems-card.png
 
     <!-- Original set -->
 
-    <a href="/Projects/BreadboardPSU/" class="project-card">
-      <img src="../assets/breadboardpsu-card.png" alt="BreadboardPSU">
-      <h3>BreadboardPSU</h3>
-      <p>Solderless breadboard compatible PSU</p>
+    <a href="/Projects/Omnifly-H7" class="project-card">
+      <img src="../assets/omnifly-card.png" alt="Omnifly-H7">
+      <h3>Omnifly-H7</h3>
+      <p>Swiss army knife of flight controllers</p>
+    </a>
+    
+    <a href="/Projects/Telemetrium" class="project-card">
+      <img src="../assets/telemetrium-card.png" alt="Telemetrium">
+      <h3>Telemetrium</h3>
+      <p>Dual-Band Full-Duplex long range telemetry link</p>
+    </a>       
+
+    <a href="/Projects/USB-HUB-PLUS" class="project-card">
+      <img src="../assets/USBHUB-card.png" alt="USB Hub+">
+      <h3>USB Hub+</h3>
+      <p>USB-C IN 2xUSB-C 3.0, 2xUSB-A 3.0 OUT</p>
+    </a>
+
+    <a href="/Projects/YABSPD" class="project-card">
+      <img src="../assets/yabspd-card.png" alt="YABSPD">
+      <h3>YABSPD</h3>
+      <p>Yet Another BSPD</p>
+    </a>
+
+    <a href="/Projects/TeamRadio" class="project-card">
+      <img src="../assets/teamradio-card.png" alt="TeamRadio">
+      <h3>TeamRadio</h3>
+      <p>1W UHF Radio with MIC and headphone AMP</p>
+    </a>
+
+    <a href="/Projects/IR-Gate" class="project-card">
+      <img src="../assets/ir-gate-card.png" alt="IR-Gate">
+      <h3>IR-Gate</h3>
+      <p>LoRa enabled 38kHz IR Gate for timing applications</p>
+    </a>    
+
+    <a href="/Projects/RF-Test-Board" class="project-card">
+      <img src="../assets/RF-Test-Board-card.png" alt="RF Test Board">
+      <h3>RF Test Board</h3>
+      <p>SMA converter and matching network tester with RF switch</p>
+    </a>
+
+    <a href="/Projects/LZR-Card" class="project-card">
+      <img src="../assets/LZR-Card-card.png" alt="LZR-Card">
+      <h3>Omnifly-H7</h3>
+      <p>PCB Business Card</p>
+    </a>
+
+    <a href="/Projects/PD-Trigger" class="project-card">
+      <img src="../assets/PD-Trigger-card.png" alt="PD-Trigger">
+      <h3>PD Trigger</h3>
+      <p>USB-C PD male to JST XH</p>
     </a>
 
     <a href="/Projects/AIOduino" class="project-card">
@@ -34,6 +82,12 @@ image: ../Social-Cards/lzrsystems-card.png
       <h3>NanoPSU</h3>
       <p>BLE enabled Programmable PSU</p>
     </a>
+
+    <a href="/Projects/BreadboardPSU" class="project-card">
+      <img src="../assets/breadboardpsu-card.png" alt="BreadboardPSU">
+      <h3>BreadboardPSU</h3>
+      <p>Solderless breadboard compatible PSU</p>
+    </a>    
 
     <a href="/Projects/Launchy" class="project-card">
       <img src="../assets/launchy-card.png" alt="Launchy">
@@ -51,12 +105,6 @@ image: ../Social-Cards/lzrsystems-card.png
       <img src="../assets/TinyPSU-card.png" alt="TinyPSU">
       <h3>TinyPSU</h3>
       <p>Small form factor CV/CC benchtop power supply</p>
-    </a>
-
-    <a href="/Projects/USB-HUB-PLUS" class="project-card">
-      <img src="../assets/USBHUB-card.png" alt="USB Hub+">
-      <h3>USB Hub+</h3>
-      <p>USB-C IN 2xUSB-C 3.0, 2xUSB-A 3.0 OUT</p>
     </a>
 
     <a href="/Projects/electronic_load" class="project-card">
@@ -66,11 +114,61 @@ image: ../Social-Cards/lzrsystems-card.png
     </a>
 
 
+
+
     <!-- Duplicate set for seamless loop -->
-    <a href="/Projects/BreadboardPSU/" class="project-card">
-      <img src="../assets/breadboardpsu-card.png" alt="BreadboardPSU">
-      <h3>BreadboardPSU</h3>
-      <p>Solderless breadboard compatible PSU</p>
+    <a href="/Projects/Omnifly-H7" class="project-card">
+      <img src="../assets/omnifly-card.png" alt="Omnifly-H7">
+      <h3>Omnifly-H7</h3>
+      <p>Swiss army knife of flight controllers</p>
+    </a>
+    
+    <a href="/Projects/Telemetrium" class="project-card">
+      <img src="../assets/telemetrium-card.png" alt="Telemetrium">
+      <h3>Telemetrium</h3>
+      <p>Dual-Band Full-Duplex long range telemetry link</p>
+    </a>       
+
+    <a href="/Projects/USB-HUB-PLUS" class="project-card">
+      <img src="../assets/USBHUB-card.png" alt="USB Hub+">
+      <h3>USB Hub+</h3>
+      <p>USB-C IN 2xUSB-C 3.0, 2xUSB-A 3.0 OUT</p>
+    </a>
+
+    <a href="/Projects/YABSPD" class="project-card">
+      <img src="../assets/yabspd-card.png" alt="YABSPD">
+      <h3>YABSPD</h3>
+      <p>Yet Another BSPD</p>
+    </a>
+
+    <a href="/Projects/TeamRadio" class="project-card">
+      <img src="../assets/teamradio-card.png" alt="TeamRadio">
+      <h3>TeamRadio</h3>
+      <p>1W UHF Radio with MIC and headphone AMP</p>
+    </a>
+
+    <a href="/Projects/IR-Gate" class="project-card">
+      <img src="../assets/ir-gate-card.png" alt="IR-Gate">
+      <h3>IR-Gate</h3>
+      <p>LoRa enabled 38kHz IR Gate for timing applications</p>
+    </a>    
+
+    <a href="/Projects/RF-Test-Board" class="project-card">
+      <img src="../assets/RF-Test-Board-card.png" alt="RF Test Board">
+      <h3>RF Test Board</h3>
+      <p>SMA converter and matching network tester with RF switch</p>
+    </a>
+
+    <a href="/Projects/LZR-Card" class="project-card">
+      <img src="../assets/LZR-Card-card.png" alt="LZR-Card">
+      <h3>Omnifly-H7</h3>
+      <p>PCB Business Card</p>
+    </a>
+
+    <a href="/Projects/PD-Trigger" class="project-card">
+      <img src="../assets/PD-Trigger-card.png" alt="PD-Trigger">
+      <h3>PD Trigger</h3>
+      <p>USB-C PD male to JST XH</p>
     </a>
 
     <a href="/Projects/AIOduino" class="project-card">
@@ -84,6 +182,12 @@ image: ../Social-Cards/lzrsystems-card.png
       <h3>NanoPSU</h3>
       <p>BLE enabled Programmable PSU</p>
     </a>
+
+    <a href="/Projects/BreadboardPSU" class="project-card">
+      <img src="../assets/breadboardpsu-card.png" alt="BreadboardPSU">
+      <h3>BreadboardPSU</h3>
+      <p>Solderless breadboard compatible PSU</p>
+    </a>    
 
     <a href="/Projects/Launchy" class="project-card">
       <img src="../assets/launchy-card.png" alt="Launchy">
@@ -101,12 +205,6 @@ image: ../Social-Cards/lzrsystems-card.png
       <img src="../assets/TinyPSU-card.png" alt="TinyPSU">
       <h3>TinyPSU</h3>
       <p>Small form factor CV/CC benchtop power supply</p>
-    </a>
-
-    <a href="/Projects/USB-HUB-PLUS" class="project-card">
-      <img src="../assets/USBHUB-card.png" alt="USB Hub+">
-      <h3>USB Hub+</h3>
-      <p>USB-C IN 2xUSB-C 3.0, 2xUSB-A 3.0 OUT</p>
     </a>
 
     <a href="/Projects/electronic_load" class="project-card">

@@ -107,12 +107,16 @@ model-viewer {
 #random-gallery-image img {
   width: 100%;
   height: auto;
-  max-height: 60vh;      /* never taller than 60% of viewport */
-  object-fit: contain;   /* keep full image visible */
+  max-height: 60vh;
+  object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   opacity: 1;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.5s ease;
+}
+
+#random-gallery-image img.hidden {
+  opacity: 0;
 }
 
 #gallery-caption {

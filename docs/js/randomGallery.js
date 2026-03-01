@@ -1,7 +1,7 @@
-let galleryInterval;   // global outside subscribe
-let lastIndex = -1;    // track last shown image index
+let galleryInterval;
+let lastIndex = -1;
 
-document$.subscribe(function() {
+document$.subscribe(function () {
   const container = document.getElementById("random-gallery-image");
   if (!container) return;
 
@@ -10,63 +10,103 @@ document$.subscribe(function() {
     "/assets/Gallery/Launchy/Launchy-Transmitter.jpg",
     "/assets/Gallery/Launchy/Launchy-Igniter-open.jpg",
     "/assets/Gallery/Launchy/Launchy-Igniter.jpg",
-    "/assets/Gallery/Launchy/Launchy-Transmitter-open.jpg"
+    "/assets/Gallery/Launchy/Launchy-Transmitter-open.jpg",
+    "/assets/Gallery/AIOduino/AIOduino-back-pcb-old.jpg",
+    "/assets/Gallery/AIOduino/AIOduino-back-pcb.jpg",
+    "/assets/Gallery/AIOduino/AIOduino-back.jpg",
+    "/assets/Gallery/AIOduino/AIOduino-front-pcb-old.jpg",
+    "/assets/Gallery/AIOduino/AIOduino-front-pcb.jpg",
+    "/assets/Gallery/AIOduino/AIOduino-front.jpg",
+    "/assets/Gallery/BreadboardPSU/BreadboardPSU-front.jpg",
+    "/assets/Gallery/FS-Sensor-board/FS-Sensor-board-back-pcb.jpg",
+    "/assets/Gallery/FS-Sensor-board/FS-Sensor-board-front-pcb.jpg",
+    "/assets/Gallery/NANOPSU/NanoPSU-front.jpg",
+    "/assets/Gallery/NANOPSU/NanoPSU-back.jpg",
+    "/assets/Gallery/TeamRadio/TeamRadio-back-pcb.jpg",
+    "/assets/Gallery/TeamRadio/TeamRadio-front-pcb.jpg",
+    "/assets/Gallery/USB-HUB-PLUS/USBHub+-back-pcb.jpg",
+    "/assets/Gallery/USB-HUB-PLUS/USBHub+-front-pcb.jpg",
+    "/assets/Gallery/YABSPD/YABSPD-back-pcb.jpg",
+    "/assets/Gallery/YABSPD/YABSPD-front-pcb.jpg"
   ];
 
-  // --- Utility: make filenames look nice
   function formatFileName(path) {
     let name = path.split("/").pop();
-    name = name.replace(/\.[^/.]+$/, ""); // remove extension
-    name = name.replace(/[-_]/g, " ");    // replace - and _ with spaces
+    name = name.replace(/\.[^/.]+$/, "");
+    name = name.replace(/[-_]/g, " ");
     return name.charAt(0).toUpperCase() + name.slice(1);
   }
 
-  function showRandomImage() {
-    // pick a new index that's not the same as the last one
+  function pickNextIndex() {
     let index;
     do {
       index = Math.floor(Math.random() * images.length);
     } while (index === lastIndex && images.length > 1);
-    lastIndex = index;
+    return index;
+  }
 
-    const randomImage = images[index];
-    const fileName = formatFileName(randomImage);
+  function showRandomImage() {
+    const index     = pickNextIndex();
+    lastIndex       = index;
+    const src       = images[index];
+    const caption   = formatFileName(src);
 
-    // first run → build DOM structure
+    // ── First run: build the DOM ──────────────────────────────────────────
     if (!container.querySelector("img")) {
       container.innerHTML = `
         <div style="text-align:center; max-width:800px; margin:auto;">
           <a href="/Gallery/" id="gallery-link" style="display:block;">
-            <img id="gallery-img" src="${randomImage}" alt="${fileName}">
+            <img id="gallery-img"
+                 class="hidden"
+                 src="${src}"
+                 alt="${caption}">
           </a>
-          <p id="gallery-caption">${fileName}</p>
+          <p id="gallery-caption">${caption}</p>
         </div>`;
+
+      const firstImg = container.querySelector("#gallery-img");
+
+      const revealFirst = () => {
+        firstImg.classList.remove("hidden");  // triggers CSS fade-in
+        firstImg.onload = null;
+      };
+
+      firstImg.onload = revealFirst;
+      // Image may already be cached — onload won't fire in that case
+      if (firstImg.complete) revealFirst();
       return;
     }
 
-    // update existing elements
-    const img = container.querySelector("#gallery-img");
-    const caption = container.querySelector("#gallery-caption");
+    // ── Subsequent runs: crossfade to next image ──────────────────────────
+    const img   = container.querySelector("#gallery-img");
+    const capEl = container.querySelector("#gallery-caption");
 
-    // fade out
-    img.style.opacity = 0;
+    // 1. Fade out — add .hidden class, CSS transition handles the animation
+    img.classList.add("hidden");
 
+    // 2. Wait for fade-out to finish, then preload the new image
     setTimeout(() => {
-      img.src = randomImage;
-      img.alt = fileName;
-      caption.textContent = fileName;
+      const preload = new Image();
 
-      // fade in
-      img.style.opacity = 1;
-    }, 800); // match transition time
+      // 3. Swap src and fade in only once the new image is fully loaded
+      preload.onload = () => {
+        img.src           = src;
+        img.alt           = caption;
+        capEl.textContent = caption;
+        img.classList.remove("hidden");  // triggers CSS fade-in
+      };
+
+      preload.onerror = () => {
+        capEl.textContent = "";
+      };
+
+      preload.src = src;
+    }, 800); // must match transition duration in extra.css
   }
 
-  // Clear old interval if it exists
+  // Clear any interval left over from a previous page navigation
   if (galleryInterval) clearInterval(galleryInterval);
 
-  // Show first image immediately
   showRandomImage();
-
-  // Repeat every 5s
   galleryInterval = setInterval(showRandomImage, 5000);
 });

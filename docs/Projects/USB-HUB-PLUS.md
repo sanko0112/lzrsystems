@@ -6,9 +6,9 @@ tags:
 
 ![Logo](../assets/Gallery/USB-HUB-PLUS/logo.png)
 
-### USB 2.0 High-Speed Hub is a **professional development hub** with integrated programming tools and peripherals. It combines a 7-port USB 2.0 hub with ST-Link programmer, dual UART bridges, and SD card reader into a single compact device for embedded development workflows.
+<h2>USB 2.0 High-Speed Hub is a **professional development hub** with integrated programming tools and peripherals. It combines a 7-port USB 2.0 hub with ST-Link programmer, dual UART bridges, and SD card reader into a single compact device for embedded development workflows.</h2>
 
-## 🚀 Features
+## Features
 
 ### Main Hub Architecture
 - **Primary Hub**: FE2.1 USB 2.0 Hub IC (7 downstream ports)
@@ -56,7 +56,7 @@ tags:
   - Protects D+, D-, CC1, CC2 lines
 - **Port Activity LEDs**: 6× green indicator LEDs (1 per external port)
 
-## 🔧 Hardware
+## Hardware
 
 ### PCB Specifications
 - **Layers**: 4-layer stackup
@@ -70,25 +70,11 @@ tags:
 - **Dimensions**: ~100mm × 70mm
 - **Mounting**: 4× M2.5 mounting holes
 
-### PCB 3D Renders
-![3D Board Top](../assets/Gallery/USB-HUB-PLUS/usbHub-front.png)
-![3D Board Bottom](../assets/Gallery/USB-HUB-PLUS/usbHub-back.png)
+### Schematics / PCB / 3D
 
-### 📐 Schematics
+<iframe src="https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=0F78AD7E-CECC-4FA9-BEC1-7F3BA169BA27&activeView=SCH" width="1280" height="720" style="overflow:hidden;border:none;width:100%;height:600px;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);"></iframe>
 
-**Block Diagram:**
-
-![Block Diagram](../assets/Gallery/USB-HUB-PLUS/USBHub-BlockDiagram.svg)
-
-**Main Schematic - Hubs & Peripherals:**
-
-![Main Schematic](../assets/Gallery/USB-HUB-PLUS/USBHub-Peripherals.svg)
-
-**Connectors & Load Switches:**
-
-![Connectors Schematic](../assets/Gallery/USB-HUB-PLUS/USBHub-Ports.svg)
-
-## 🔌 Port Mapping
+## Port Mapping
 
 ### External Ports (User-Accessible)
 | Port&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | Connector &nbsp; &nbsp; &nbsp;| Hub IC&nbsp; &nbsp; &nbsp; &nbsp;  | Downstream # | Features |
@@ -105,12 +91,12 @@ tags:
 | Peripheral&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; | Hub IC&nbsp; &nbsp; &nbsp; | Downstream #&nbsp; &nbsp; &nbsp; | Interface |
 |------------|--------|--------------|-----------|
 |------------|--------|--------------|--------------------------------------------|
-| **ST-Link ISP** | FE1.1S |&nbsp; &nbsp; &nbsp; &nbsp;  DS10 | 5-pin header (GND, RST, SWO, CLK, DIO) |
+| **ST-Link ISP** | FE1.1S |&nbsp; &nbsp; &nbsp; &nbsp;  DS11 | 5-pin header (GND, RST, SWO, CLK, DIO) |
 | **UART Bridge 1** | FE1.1S |&nbsp; &nbsp; &nbsp; &nbsp;  DS10 | 6-pin header + 3.3V/5V switch |
 | **UART Bridge 2** | FE1.1S |&nbsp; &nbsp; &nbsp; &nbsp;  DS9 | 6-pin header + 3.3V/5V switch |
 | **SD Card Reader** | FE1.1S |&nbsp; &nbsp; &nbsp; &nbsp;  DS8 | Push-pull MicroSD slot |
 
-## ⚙️ Technical Specifications
+## Technical Specifications
 
 ### USB Hub Controllers
 **FE2.1 (Primary Hub)**
@@ -153,7 +139,7 @@ tags:
 - Hot-swap: Yes
 - Power: 3.3V + 5V (card power selectable)
 
-## 🛠️ Usage
+## Usage
 
 ### Basic Operation
 1. **Power Connection**: 
@@ -205,7 +191,7 @@ PIN 5: NRST
 PIN 6: SWO
 ```
 
-## ⚠️ Important Design Notes
+## Important Design Notes
 
 ### USB-C CC Resistor Configuration
 - **Downstream ports (host)**: 56kΩ pull-ups to VBUS
@@ -239,7 +225,7 @@ All crystals use **10pF load capacitors** (C0G/NP0 type):
 - Via fencing around connectors for EMI suppression
 - TVS diodes placed <3mm from connectors
 
-## 📦 Manufacturing
+## Manufacturing
 
 ### PCB Fabrication Specs
 ```
@@ -254,27 +240,7 @@ Solder mask:      Green (or choice)
 Silkscreen:       White both sides
 ```
 
-### Assembly Notes
-- **Reflow profile**: Standard SAC305 lead-free
-- **Via-in-pad**: Plugged/tented recommended under ICs
-- **USB-C connectors**: Mechanical holes provide strain relief
-- **Thermal vias**: Required on exposed pads (TPS2051B, CH343P, hub ICs)
-
-### BOM Summary
-- **Main ICs**: 7 (2× hub, 2× UART, 1× STM32, 1× SD, 1× LDO)
-- **Load switches**: 6× TPS2051BDBVR
-- **TVS diodes**: 8× TPD4E001RDBVR (32 protection lines total)
-- **Crystals**: 4× (3× 12MHz, 1× 8MHz)
-- **Connectors**: 7× USB-C, 3× USB-A, various headers
-- **Passives**: ~110 (resistors, capacitors, LEDs)
-
-### Design Considerations for Future Revisions
-- Add test points for critical signals (+5V, +3.3V, FE2_EN, OC pins)
-- Consider upgrading L3 copper from 1/2oz to 1oz for better power handling
-- Evaluate adding USB 3.0 capability (requires different hub IC)
-- Optional: Add USB-PD negotiation IC for higher power delivery
-
-## 📚 Resources
+## Resources
 
 ### Datasheets
 - [FE2.1 USB Hub Controller](https://www.lcsc.com/datasheet/C39693.pdf)
@@ -290,24 +256,5 @@ Silkscreen:       White both sides
 - **Programming**: STM32CubeIDE, OpenOCD, st-link tools
 - **Serial Terminal**: PuTTY, TeraTerm, minicom
 
-## 📄 License
-
-This hardware design is released under:
-- **Hardware**: CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P)
-
-You are free to use, modify, and distribute this design for personal or commercial purposes. Attribution is appreciated but not required under the permissive license.
-
-## 🚧 Project Status
-
-**Current Status**: ✅ Design Complete, 🔄 PCB Ordered, ⏳ Awaiting Manufacturing
-
-- [x] Schematic design
-- [x] PCB layout
-- [x] Design rule check (DRC)
-- [x] Bill of materials
-- [x] Gerber generation
-- [ ] PCB fabrication (in progress)
-- [ ] Assembly
-- [ ] Testing & validation
-- [ ] Firmware development
-- [ ] Documentation completion
+## :octicons-image-24: Photos
+<div id="USBHUBPlus-gallery"></div>

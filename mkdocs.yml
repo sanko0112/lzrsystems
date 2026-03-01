@@ -52,6 +52,15 @@ nav:
   - Home: index.md
   - Projects: 
       - Projects/index.md
+      - Omnifly-H7: Projects/Omnifly-H7.md
+      - Telemetrium: Projects/Telemetrium.md
+      - USB Hub+: Projects/USB-HUB-PLUS.md
+      - YABSPD: Projects/YABSPD.md
+      - TeamRadio: Projects/TeamRadio.md
+      - IR-Gate: Projects/IR-Gate.md
+      - RF Test Board: Projects/RF-Test-Board.md
+      - LZR-Card: Projects/LZR-Card.md
+      - PD Trigger: Projects/PD-Trigger.md
       - AIODuino: Projects/AIOduino.md
       - NANOPSU: Projects/NANOPSU.md
       - Launchy: Projects/launchy.md
@@ -59,7 +68,8 @@ nav:
       - Sparky: Projects/Sparky.md
       - TinyPSU: Projects/TinyPSU.md
       - Electronic load: Projects/electronic_load.md
-      - USB3.0 Hub: Projects/USB-HUB-PLUS.md
+      
+      
     
     
   - Downloads: Downloads.md
