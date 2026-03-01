@@ -74,8 +74,8 @@ document$.subscribe(function() {
 
     const usb_hub_plus_images = [
     "/assets/Gallery/USB-HUB-PLUS/logo.svg",
-    "/assets/Gallery/USB-HUB-PLUS/USBHub-front-render.png",
-    "/assets/Gallery/USB-HUB-PLUS/USBHub-back-render.png",
+    "/assets/Gallery/USB-HUB-PLUS/USBHub+-front-render.png",
+    "/assets/Gallery/USB-HUB-PLUS/USBHub+-back-render.png",
     "/assets/Gallery/USB-HUB-PLUS/USBHub+-front-pcb.jpg",
     "/assets/Gallery/USB-HUB-PLUS/USBHub+-back-pcb.jpg"
   ];
