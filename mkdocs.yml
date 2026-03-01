@@ -20,7 +20,6 @@ theme:
   features:
     - navigation.instant
     - navigation.instant.progress
-    - navigation.instant.preview
     - navigation.tracking
     - navigation.sections
     - navigation.expand

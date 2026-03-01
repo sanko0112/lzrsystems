@@ -45,11 +45,29 @@ document$.subscribe(function () {
     return index;
   }
 
+  const FADE_MS = 600; // duration of each fade in milliseconds
+
+  function fadeOut(el) {
+    return el.animate([{ opacity: 1 }, { opacity: 0 }], {
+      duration: FADE_MS,
+      easing: "ease",
+      fill: "forwards"   // hold opacity:0 after animation ends
+    }).finished;         // returns a Promise that resolves when done
+  }
+
+  function fadeIn(el) {
+    return el.animate([{ opacity: 0 }, { opacity: 1 }], {
+      duration: FADE_MS,
+      easing: "ease",
+      fill: "forwards"
+    }).finished;
+  }
+
   function showRandomImage() {
-    const index     = pickNextIndex();
-    lastIndex       = index;
-    const src       = images[index];
-    const caption   = formatFileName(src);
+    const index   = pickNextIndex();
+    lastIndex     = index;
+    const src     = images[index];
+    const caption = formatFileName(src);
 
     // ── First run: build the DOM ──────────────────────────────────────────
     if (!container.querySelector("img")) {
@@ -57,9 +75,9 @@ document$.subscribe(function () {
         <div style="text-align:center; max-width:800px; margin:auto;">
           <a href="/Gallery/" id="gallery-link" style="display:block;">
             <img id="gallery-img"
-                 class="hidden"
                  src="${src}"
-                 alt="${caption}">
+                 alt="${caption}"
+                 style="opacity:0;">
           </a>
           <p id="gallery-caption">${caption}</p>
         </div>`;
@@ -67,46 +85,46 @@ document$.subscribe(function () {
       const firstImg = container.querySelector("#gallery-img");
 
       const revealFirst = () => {
-        firstImg.classList.remove("hidden");  // triggers CSS fade-in
+        fadeIn(firstImg);
         firstImg.onload = null;
       };
 
       firstImg.onload = revealFirst;
-      // Image may already be cached — onload won't fire in that case
       if (firstImg.complete) revealFirst();
       return;
     }
 
-    // ── Subsequent runs: crossfade to next image ──────────────────────────
+    // ── Subsequent runs: fade out → preload → swap → fade in ─────────────
     const img   = container.querySelector("#gallery-img");
     const capEl = container.querySelector("#gallery-caption");
 
-    // 1. Fade out — add .hidden class, CSS transition handles the animation
-    img.classList.add("hidden");
+    // 1. Fade out, wait for it to finish
+    fadeOut(img).then(() => {
 
-    // 2. Wait for fade-out to finish, then preload the new image
-    setTimeout(() => {
+      // 2. Preload next image while screen is black
       const preload = new Image();
 
-      // 3. Swap src and fade in only once the new image is fully loaded
       preload.onload = () => {
+        // 3. Swap content
         img.src           = src;
         img.alt           = caption;
         capEl.textContent = caption;
-        img.classList.remove("hidden");  // triggers CSS fade-in
+
+        // 4. Fade in
+        fadeIn(img);
       };
 
       preload.onerror = () => {
-        capEl.textContent = "";
+        fadeIn(img); // fade back in even if image 404s
       };
 
       preload.src = src;
-    }, 800); // must match transition duration in extra.css
+    });
   }
 
   // Clear any interval left over from a previous page navigation
   if (galleryInterval) clearInterval(galleryInterval);
 
   showRandomImage();
-  galleryInterval = setInterval(showRandomImage, 5000);
+  galleryInterval = setInterval(showRandomImage, 3000);
 });
