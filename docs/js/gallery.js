@@ -82,8 +82,8 @@ document$.subscribe(function() {
 
     const yabspd_images = [
     "/assets/Gallery/YABSPD/YABSPD-logo.svg",
-    "/assets/Gallery/YABSPD/YABSPD-front-render.png",
-    "/assets/Gallery/YABSPD/YABSPD-back-render.png",
+    "/assets/Gallery/YABSPD/YABSPD-Front-render.png",
+    "/assets/Gallery/YABSPD/YABSPD-Back-render.png",
     "/assets/Gallery/YABSPD/YABSPD-front-pcb.jpg",
     "/assets/Gallery/YABSPD/YABSPD-back-pcb.jpg"
   ];
