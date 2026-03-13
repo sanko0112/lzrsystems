@@ -55,7 +55,10 @@ document$.subscribe(function() {
     const omnifly_images = [
       "/assets/Gallery/Omnifly-H7/omnifly-logo.svg",
       "/assets/Gallery/Omnifly-H7/omnifly-front.png",
-      "/assets/Gallery/Omnifly-H7/omnifly-back.png"
+      "/assets/Gallery/Omnifly-H7/omnifly-back.png",
+      "/assets/Gallery/Omnifly-H7/omnifly-board-front.jpg",
+      "/assets/Gallery/Omnifly-H7/omnifly-board-back.jpg"
+      
   ];
 
     const teamradio_images = [
@@ -69,7 +72,12 @@ document$.subscribe(function() {
     const telemetrium_images = [
       "/assets/Gallery/Telemetrium/telemetrium-logo.svg",
       "/assets/Gallery/Telemetrium/telemetrium-front.png",
-      "/assets/Gallery/Telemetrium/telemetrium-back.png"
+      "/assets/Gallery/Telemetrium/telemetrium-back.png",
+      "/assets/Gallery/Telemetrium/Telemetrium-board-front.jpg",
+      "/assets/Gallery/Telemetrium/Telemetrium-board-back.jpg",
+      "/assets/Gallery/Telemetrium/Telemetrium-LFI-Matching.png",
+      "/assets/Gallery/Telemetrium/Telemetrium-Notch-Filter.png"
+
   ];
 
     const usb_hub_plus_images = [
@@ -77,7 +85,8 @@ document$.subscribe(function() {
     "/assets/Gallery/USB-HUB-PLUS/USBHub+-front-render.png",
     "/assets/Gallery/USB-HUB-PLUS/USBHub+-back-render.png",
     "/assets/Gallery/USB-HUB-PLUS/USBHub+-front-pcb.jpg",
-    "/assets/Gallery/USB-HUB-PLUS/USBHub+-back-pcb.jpg"
+    "/assets/Gallery/USB-HUB-PLUS/USBHub+-back-pcb.jpg",
+    "/assets/Gallery/USB-HUB-PLUS/USB-Hub+-front.jpg"
   ];
 
     const yabspd_images = [
@@ -85,7 +94,8 @@ document$.subscribe(function() {
     "/assets/Gallery/YABSPD/YABSPD-Front-render.png",
     "/assets/Gallery/YABSPD/YABSPD-Back-render.png",
     "/assets/Gallery/YABSPD/YABSPD-front-pcb.jpg",
-    "/assets/Gallery/YABSPD/YABSPD-back-pcb.jpg"
+    "/assets/Gallery/YABSPD/YABSPD-back-pcb.jpg",
+    "/assets/Gallery/YABSPD/YABSPD-front.jpg"
   ];
 
     const IR_Gate_images = [
@@ -97,18 +107,24 @@ document$.subscribe(function() {
     const RF_test_board_images = [
     "/assets/Gallery/RF-Test-Board/RF-Board-logo.svg",
     "/assets/Gallery/RF-Test-Board/RF-Board-front-render.png",
-    "/assets/Gallery/RF-Test-Board/RF-Board-back-render.png"
+    "/assets/Gallery/RF-Test-Board/RF-Board-back-render.png",
+    "/assets/Gallery/RF-Test-Board/RF-Test-Board-board-front.jpg",
+    "/assets/Gallery/RF-Test-Board/RF-Test-Board-board-back.jpg"
   ];
 
     const lzr_card_images = [
     "/assets/Gallery/Business-card/LZR-Card-logo.svg",
     "/assets/Gallery/Business-card/Business-card-front-render.png",
-    "/assets/Gallery/Business-card/Business-card-back-render.png"
+    "/assets/Gallery/Business-card/Business-card-back-render.png",
+    "/assets/Gallery/Business-card/LZR-Card-board-front.jpg",
+    "/assets/Gallery/Business-card/LZR-Card-board-back.jpg"
   ];
     const pd_trigger_images = [
     "/assets/Gallery/USB-PD-Trigger/PD-Trigger-logo.svg",
     "/assets/Gallery/USB-PD-Trigger/PD-Trigger-front-render.png",
-    "/assets/Gallery/USB-PD-Trigger/PD-Trigger-back-render.png"
+    "/assets/Gallery/USB-PD-Trigger/PD-Trigger-back-render.png",
+    "/assets/Gallery/USB-PD-Trigger/PD-Trigger-board-front.jpg",
+    "/assets/Gallery/USB-PD-Trigger/PD-Trigger-board-back.jpg",
   ];
   
   

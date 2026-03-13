@@ -1,5 +1,13 @@
 let galleryInterval;
-let lastIndex = -1;
+let queue = [];
+
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
 
 document$.subscribe(function () {
   const container = document.getElementById("random-gallery-image");
@@ -11,9 +19,7 @@ document$.subscribe(function () {
     "/assets/Gallery/Launchy/Launchy-Igniter-open.jpg",
     "/assets/Gallery/Launchy/Launchy-Igniter.jpg",
     "/assets/Gallery/Launchy/Launchy-Transmitter-open.jpg",
-    "/assets/Gallery/AIOduino/AIOduino-back-pcb-old.jpg",
     "/assets/Gallery/AIOduino/AIOduino-back-pcb.jpg",
-    "/assets/Gallery/AIOduino/AIOduino-back.jpg",
     "/assets/Gallery/AIOduino/AIOduino-front-pcb-old.jpg",
     "/assets/Gallery/AIOduino/AIOduino-front-pcb.jpg",
     "/assets/Gallery/AIOduino/AIOduino-front.jpg",
@@ -27,7 +33,19 @@ document$.subscribe(function () {
     "/assets/Gallery/USB-HUB-PLUS/USBHub+-back-pcb.jpg",
     "/assets/Gallery/USB-HUB-PLUS/USBHub+-front-pcb.jpg",
     "/assets/Gallery/YABSPD/YABSPD-back-pcb.jpg",
-    "/assets/Gallery/YABSPD/YABSPD-front-pcb.jpg"
+    "/assets/Gallery/YABSPD/YABSPD-front-pcb.jpg",
+    "/assets/Gallery/USB-HUB-PLUS/USB-Hub+-front.jpg",
+    "/assets/Gallery/YABSPD/YABSPD-front.jpg",
+    "/assets/Gallery/RF-Test-Board/RF-Test-Board-board-front.jpg",
+    "/assets/Gallery/RF-Test-Board/RF-Test-Board-board-back.jpg",
+    "/assets/Gallery/Business-card/LZR-Card-board-front.jpg",
+    "/assets/Gallery/Business-card/LZR-Card-board-back.jpg",
+    "/assets/Gallery/USB-PD-Trigger/PD-Trigger-board-front.jpg",
+    "/assets/Gallery/USB-PD-Trigger/PD-Trigger-board-back.jpg",
+    "/assets/Gallery/Omnifly-H7/omnifly-board-front.jpg",
+    "/assets/Gallery/Omnifly-H7/omnifly-board-back.jpg",
+    "/assets/Gallery/Telemetrium/Telemetrium-board-front.jpg",
+    "/assets/Gallery/Telemetrium/Telemetrium-board-back.jpg",
   ];
 
   function formatFileName(path) {
@@ -38,21 +56,20 @@ document$.subscribe(function () {
   }
 
   function pickNextIndex() {
-    let index;
-    do {
-      index = Math.floor(Math.random() * images.length);
-    } while (index === lastIndex && images.length > 1);
-    return index;
+    if (queue.length === 0) {
+      queue = shuffleArray([...Array(images.length).keys()]);
+    }
+    return queue.pop();
   }
 
-  const FADE_MS = 600; // duration of each fade in milliseconds
+  const FADE_MS = 600;
 
   function fadeOut(el) {
     return el.animate([{ opacity: 1 }, { opacity: 0 }], {
       duration: FADE_MS,
       easing: "ease",
-      fill: "forwards"   // hold opacity:0 after animation ends
-    }).finished;         // returns a Promise that resolves when done
+      fill: "forwards"
+    }).finished;
   }
 
   function fadeIn(el) {
@@ -65,7 +82,6 @@ document$.subscribe(function () {
 
   function showRandomImage() {
     const index   = pickNextIndex();
-    lastIndex     = index;
     const src     = images[index];
     const caption = formatFileName(src);
 
@@ -98,24 +114,18 @@ document$.subscribe(function () {
     const img   = container.querySelector("#gallery-img");
     const capEl = container.querySelector("#gallery-caption");
 
-    // 1. Fade out, wait for it to finish
     fadeOut(img).then(() => {
-
-      // 2. Preload next image while screen is black
       const preload = new Image();
 
       preload.onload = () => {
-        // 3. Swap content
         img.src           = src;
         img.alt           = caption;
         capEl.textContent = caption;
-
-        // 4. Fade in
         fadeIn(img);
       };
 
       preload.onerror = () => {
-        fadeIn(img); // fade back in even if image 404s
+        fadeIn(img);
       };
 
       preload.src = src;
